@@ -1,0 +1,16 @@
+<input
+[(ngModel)]="searchTerm"
+(keyup)="handleKeyup()"
+placeholder="Search for cars"
+type="number">
+
+<app-car
+*ngFor="let car of cars; let i = index"
+  [index]="i"
+  [make]="car.make"
+  [model]="car.model"
+  [horsepower]="car.horsepower"
+  [paintColor]="car.paintColor"
+  (upgrade)="handleUpgrade($event)">
+</app-car>
+

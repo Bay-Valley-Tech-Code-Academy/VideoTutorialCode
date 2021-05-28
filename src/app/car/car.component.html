@@ -1,0 +1,12 @@
+<div [appHighlight]="paintColor">
+    <p appHighlight="yellow">Index: {{index}}</p>
+    <p>Make: {{make}}</p>
+    <p>Model: {{model}}</p>
+    <p *ngIf="horsepower">Horsepower: {{horsepower}}</p>
+    <p>Paint Color: {{paintColor}}</p>
+
+    <button (click)="handleClick()">Upgrade!</button>
+</div>
+
+
+
